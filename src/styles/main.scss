@@ -1,0 +1,12 @@
+
+$theme-colors: (
+  'primary': #01859a,
+  'primary-blue': #3858a7,
+  'secondary-blue': #4275e2,
+  'primary-green': #8Bc144,
+  'dark': #232323
+);
+
+@import '../../node_modules/animate.css/animate.min';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'custom-theme';

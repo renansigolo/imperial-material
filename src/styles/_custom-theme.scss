@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative !important;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  .display-4 {
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-weight: 400;
+  }
+}
+
+a {
+  color: $dark;
+}
+
+@mixin grid($columns) {
+  display: grid;
+  grid-template-columns: repeat(3fr, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  @include desktop {
+    //   grid-template-columns: repeat($columns, 1fr);
+    //   grid-column-gap: 30px;
+    //   grid-row-gap: 30px;
+  }
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 10px 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hero {
+  // background-image: url(../images/carbon-fibre-bg.jpg);
+  // background-size: contain;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+#medical-equipments {
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem #3858a725 !important;
+  }
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem #3858a725 !important;
+    transform: scale(1.01);
+  }
+}
+
+#sanitisers {
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem #8bc14425 !important;
+  }
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem #8bc14425 !important;
+    transform: scale(1.01);
+  }
+}
+
+.banner {
+  height: 50vh;
+
+  @media screen and (max-width: 768px) {
+    background-color: #01859a;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg-import.png);
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  color: #fff;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    button {
+      display: inline-block;
+      height: 56px;
+      line-height: 56px;
+      margin: 40px auto 0;
+      padding: 0 34px;
+      border-radius: 6px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      background-color: #fff;
+      border: 1px solid #fff;
+      font-weight: bold;
+
+      &:hover {
+        border: 1px solid #fff;
+      }
+
+      a {
+        color: #01859a;
+
+        &:hover {
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}
+
+.tab-pane {
+  min-height: 50vh;
+
+  .coming-soon {
+    margin: 30px 0;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #01859a !important;
+}
+
+#contact {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  hr {
+    width: 50px;
+  }
+}
+
+.contact-card {
+  padding: 30px 12px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding-left: 7px;
+  }
+
+  li {
+    display: inline-flex;
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__form {
+    width: 90vw;
+
+    @media only screen and (min-width: 576px) {
+      width: 50vw;
+    }
+
+    .btn-primary {
+      padding: 0.7rem 3rem;
+    }
+  }
+}
+
+#form-response {
+  display: none;
+}

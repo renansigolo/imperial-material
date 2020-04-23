@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Imperial Material</title>
+    <meta name="author" content="Renan Sigolo" />
+    <meta name="description" content="Gulp Workflow" />
+
+    <link rel="stylesheet" href="assets/styles.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="images/icons/safari-pinned-tab.svg"
+      color="#00cdc2"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar">
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+    <main id="app">
+      <!-- Navigation -->
+      <div
+        class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 bg-white border-bottom shadow-sm sticky-top"
+      >
+        <a
+          class="navbar-brand my-0 mr-md-auto font-weight-normal animated fadeInLeft font-weight-bold"
+          href="#"
+        >
+          <img
+            src="images/logo-imperial-material.svg"
+            width="80"
+            height="60"
+            class="d-inline-block align-center"
+            alt="Image"
+          />
+          {{ imperialMaterial }}
+        </a>
+        <nav class="my-2 my-md-0 mr-md-3 animated fadeInRight" id="navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link p-2 aimated" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 aimated" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 aimated" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 aimated" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <!-- Hero -->
+        <div class="animated fadeInRight hero text-center">
+          <img
+            src="images/logo-imperial-material.svg"
+            class="img-fluid"
+            width="600"
+            alt="Image"
+          />
+          <h1 class="text-primary">
+            Imperial Material
+          </h1>
+          <h2 class="text-primary mb-5 d-none d-md-block">
+            Procurement | Innovation | Consultancy
+          </h2>
+          <h2 class="text-primary mb-5 d-md-none">
+            Procurement
+            <br />
+            Innovation
+            <br />
+            Consultancy
+          </h2>
+        </div>
+
+        <div class="container mt-5" id="services">
+          <h1 class="display-4 text-center animated fadeInDown text-primary">
+            Our Services
+          </h1>
+          <p class="lead text-center">
+            Global Sourcing and Procurement are real opportunities for cost
+            reduction and competitive advantage. These cost reductions have as
+            objective to create a direct channel between the importer and
+            exporter, reducing the number of intermediates in the Supply Chain.
+            Imperial material Sourcing’s end-to-end Sourcing Intelligence can
+            assure the best suppliers, capable and competitive for your
+            business.
+          </p>
+
+          <div class="row featurette my-5 container animated fadeInUp">
+            <div class="col-md-7 p-5">
+              <h2 class="featurette-heading text-primary">
+                Our proven
+                <br />
+                <span class="text-muted">sourcing process.</span>
+              </h2>
+              <ol class="lead pl-3">
+                <li>Understanding your requirements</li>
+                <li>Collect bids from suppliers</li>
+                <li>Provide Samples</li>
+                <li>Production</li>
+                <li>Shipping</li>
+                <li>Goods delivered to your location</li>
+              </ol>
+            </div>
+            <div class="col-md-5">
+              <img
+                src="images/services/service-2.png"
+                alt="Image"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded w-100"
+                width="300"
+              />
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="row grid featurette my-5 container animated fadeInUp">
+            <div
+              class="card text-center"
+              style="width: 100%;"
+              v-for="(service, index) in services"
+            >
+              <img
+                v-bind:src="'images/services/service-' + index + '.png'"
+                class="card-img-top"
+                alt="Product Image"
+              />
+              <div class="card-body card-flex">
+                <div>
+                  <h5 class="card-title">{{service.title}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    {{service.subtitle}}
+                  </h6>
+                </div>
+                <p class="card-text">
+                  {{service.description}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div id="products" class="my-5">
+          <h1
+            class="display-4 text-center animated fadeInDown text-primary mt-5"
+          >
+            Our Products
+          </h1>
+          <p class="lead text-center">
+            Select a category to view our products
+          </p>
+
+          <ul class="nav nav-tabs nav-fill mt-5" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary-green font-weight-bold active"
+                id="health-tab"
+                data-toggle="tab"
+                href="#health"
+                role="tab"
+                aria-controls="health"
+                aria-selected="true"
+              >
+                Health and Wellbeing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-muted font-weight-bold"
+                id="construction-tab"
+                data-toggle="tab"
+                href="#construction"
+                role="tab"
+                aria-controls="construction"
+                aria-selected="false"
+              >
+                Construction & Building Supplies
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-muted font-weight-bold"
+                id="furniture-tab"
+                data-toggle="tab"
+                href="#furniture"
+                role="tab"
+                aria-controls="furniture"
+                aria-selected="false"
+              >
+                Furniture & Lifestyle
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-muted font-weight-bold"
+                id="packaging-tab"
+                data-toggle="tab"
+                href="#packaging"
+                role="tab"
+                aria-controls="packaging"
+                aria-selected="false"
+              >
+                Packaging
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-muted font-weight-bold"
+                id="other-tab"
+                data-toggle="tab"
+                href="#other"
+                role="tab"
+                aria-controls="other"
+                aria-selected="false"
+              >
+                Other Categories
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="health"
+              role="tabpanel"
+              aria-labelledby="health-tab"
+            >
+              <!-- Sanitisers Section -->
+              <div class="bg-sanitisers" id="sanitisers">
+                <div class="container pb-5">
+                  <div class="row">
+                    <div
+                      class="pricing-header container p-5 mx-auto text-center animated zoomIn"
+                    >
+                      <h1 class="display-4 text-primary-green">
+                        Imperial Plus
+                      </h1>
+                    </div>
+                    <div
+                      class="col-md-4"
+                      v-for="(item, index) in products"
+                      v-if="item.category === 'sanitisers'"
+                    >
+                      <div
+                        class="card mb-4 shadow-sm animated zoomIn"
+                        style="min-height: 96%;"
+                      >
+                        <img
+                          v-bind:src="'images/products/product-' + index + '.png'"
+                          class="bd-placeholder-img card-img-top"
+                          alt="Card Product Image"
+                        />
+                        <div
+                          class="card-body d-flex flex-column justify-content-between"
+                        >
+                          <div>
+                            <h5 class="card-title">{{ item.title }}</h5>
+                            <p class="card-text text-secondary">
+                              {{ item.description }}
+                            </p>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-3"
+                          >
+                            <div class="btn-group">
+                              <button
+                                type="button"
+                                class="btn btn-sm btn-outline-primary-green"
+                              >
+                                <a href="#contact">
+                                  Enquire now
+                                </a>
+                              </button>
+                            </div>
+                            <small class="text-muted text-right">
+                              {{ item.country }}
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="construction"
+              role="tabpanel"
+              aria-labelledby="construction-tab"
+            >
+              <div class="coming-soon text-muted animated zoomIn">
+                <div class="grid">
+                  <div
+                    class="card"
+                    style="width: 20rem;"
+                    v-for="(item, index) in construction"
+                    v-if="item.category === 'construction'"
+                  >
+                    <img
+                      v-bind:src="'images/products/construction-' + index + '.png'"
+                      class="card-img-top"
+                      alt="Product Image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">{{ item.title }}</h5>
+                      <ul>
+                        <li v-for="listItem in item.list">{{listItem}}</li>
+                      </ul>
+                      <p class="card-text">
+                        {{ item.description }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="furniture"
+              role="tabpanel"
+              aria-labelledby="furniture-tab"
+            >
+              <div class="coming-soon text-muted animated zoomIn">
+                <div class="grid">
+                  <div
+                    class="card"
+                    style="width: 20rem;"
+                    v-for="(item, index) in furniture"
+                    v-if="item.category === 'furniture'"
+                  >
+                    <img
+                      v-bind:src="'images/products/furniture-' + index + '.png'"
+                      class="card-img-top"
+                      alt="Product Image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">{{ item.title }}</h5>
+                      <ul>
+                        <li v-for="listItem in item.list">{{listItem}}</li>
+                      </ul>
+                      <p class="card-text">
+                        {{ item.description }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="packaging"
+              role="tabpanel"
+              aria-labelledby="packaging-tab"
+            >
+              <div class="coming-soon text-muted animated zoomIn">
+                <div class="grid">
+                  <div
+                    class="card"
+                    style="width: 20rem;"
+                    v-for="(item, index) in packaging"
+                  >
+                    <img
+                      v-bind:src="'images/products/packaging-' + index + '.png'"
+                      class="card-img-top"
+                      alt="Product Image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">{{ item.title }}</h5>
+                      <ul>
+                        <li v-for="listItem in item.list">{{listItem}}</li>
+                      </ul>
+                      <p class="card-text">
+                        {{ item.description }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="other"
+              role="tabpanel"
+              aria-labelledby="other-tab"
+            >
+              <div class="coming-soon text-muted animated zoomIn">
+                <div class="grid">
+                  <div
+                    class="card"
+                    style="width: 20rem;"
+                    v-for="(item, index) in other"
+                  >
+                    <img
+                      v-bind:src="'images/products/other-' + index + '.png'"
+                      class="card-img-top"
+                      alt="Product Image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">{{ item.title }}</h5>
+                      <ul>
+                        <li v-for="listItem in item.list">{{listItem}}</li>
+                      </ul>
+                      <p class="card-text">
+                        {{ item.description }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner py-5" id="about">
+        <div class="container text-center banner__content animated slideInLeft">
+          <h1 class="display-4 mt-3">
+            Import better products
+            <br />
+            faster and easier!
+          </h1>
+          <button type="button" class="btn btn-lg btn-outline-primary">
+            <a href="#contact">
+              Enquire Now
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <h1 class="display-4 text-center animated fadeInDown text-primary">
+          About Us
+        </h1>
+        <p class="lead text-center x-5">
+          If you need a one-stop-shop for all your product sourcing and
+          importing requirements, we offer a complete end to end solution, from
+          sourcing the product to distribution to the end customer.
+          <br />
+          <br />
+          We offer a comprehensive range of tailor-made sourcing services aimed
+          at facilitating and streamlining your business in China.
+          <br />
+          <br />
+          We have a reliable network that reaches out to the best suppliers in
+          China, and our team uses their expertise and experience to ensure that
+          you minimize expenses, mitigate associated risks.
+        </p>
+        <div class="row">
+          <div class="col-lg-4 text-center p-4 animated fadeInLeftBig">
+            <img
+              class="rounded-circle"
+              src="images/why-1.jpg"
+              width="200"
+              alt="Image"
+            />
+            <h2 class="mt-2 text-primary">Fast</h2>
+            <p class="text-secondary">
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis
+              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center p-4 animated fadeInUpBig">
+            <img
+              class="rounded-circle"
+              src="images/why-2.jpg"
+              width="200"
+              alt="Image"
+            />
+            <h2 class="mt-2 text-primary">Reliable</h2>
+            <p class="text-secondary">
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
+              amet fermentum.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center p-4 animated fadeInRightBig">
+            <img
+              class="rounded-circle"
+              src="images/why-3.jpg"
+              width="200"
+              alt="Image"
+            />
+            <h2 class="mt-2 text-primary">Secure</h2>
+            <p class="text-secondary">
+              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+              egestas eget quam. Vestibulum id ligula porta felis euismod
+              semper.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="bg-light text-center py-5" id="contact">
+        <div id="form">
+          <div class="animated zoomIn mb-3 container">
+            <h1 class="display-4 text-primary">Contact Us</h1>
+            <hr />
+            <p class="text-secondary">
+              Get free quotes for product manufacturing from China, India &
+              Eastern Europe
+            </p>
+          </div>
+
+          <div class="contact">
+            <div class="contact__form">
+              <form method="post" id="contact-form">
+                <div class="form-group">
+                  <input
+                    type="name"
+                    class="form-control"
+                    placeholder="Name"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="phone"
+                    class="form-control"
+                    placeholder="Phone"
+                    name="phone"
+                    id="phone"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                    name="message"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="form-response">
+          <h2 class="text-primary">
+            Thank you for your message
+            <br />
+            We will contact you shortly.
+          </h2>
+        </div>
+        <!-- <div class="d-flex justify-content-center">
+          <div class="contact-card">
+            <ul>
+              <li>
+                <i class="fas fa-phone mr-3 fa-lg text-muted"></i>
+                <p class="text-muted">
+                  <a href="tel:+61292562689">
+                    +61 2 9256 2689
+                  </a>
+                </p>
+              </li>
+              <li>
+                <i class="fas fa-envelope mr-3 fa-lg text-muted"></i>
+                <p class="text-muted">
+                  <a href="mailto:sales@i-material.com.au">
+                    sales@i-material.com.au
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+
+      <hr class="featurette-divider m-0" />
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 animated slideInUp">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 mb-3">
+            <img src="images/icons/icon-72x72.png" width="60" alt="Image" />
+          </div>
+
+          <div class="col-12">
+            <ul class="list-unstyled text-small d-flex justify-content-center">
+              <li><a class="text-muted p-3" href="#">Facebook</a></li>
+              <li><a class="text-muted p-3" href="#">Twitter</a></li>
+              <li><a class="text-muted p-3" href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <small class="text-muted">
+            Copyright @ Imperial Material
+            <br />
+            All rights reserved
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/libs.min.js"></script>
+    <script src="assets/scripts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  </body>
+</html>
