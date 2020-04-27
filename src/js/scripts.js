@@ -177,7 +177,7 @@ var app = new Vue({
           'Garage Doors',
           'Garden Windows',
           'Interior Doors',
-          'Other Doors &amp; Windows',
+          'Other Doors & Windows',
           'Shutter Doors',
         ],
         category: 'construction',
@@ -256,7 +256,7 @@ var app = new Vue({
         list: [
           'Blister Cards',
           'Bottles',
-          'Cans &amp; Tins',
+          'Cans & Tins',
           'Jars',
           'Lids, Bottle Caps, Closures',
           'Packaging Tubes',
@@ -274,7 +274,7 @@ var app = new Vue({
         list: [
           'Blister Cards',
           'Bottles',
-          'Cans &amp; Tins',
+          'Cans & Tins',
           'Jars',
           'Lids, Bottle Caps, Closures',
           'Packaging Tubes',
