@@ -117,6 +117,86 @@
           </h2>
         </div>
 
+        <div class="banner py-5" id="about">
+          <div
+            class="container text-center banner__content animated slideInLeft"
+          >
+            <h1 class="display-4 mt-3">
+              Import better products
+              <br />
+              faster and easier!
+            </h1>
+            <button type="button" class="btn btn-lg btn-outline-primary">
+              <a href="#contact">
+                Enquire Now
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <div class="container my-5">
+          <h1 class="display-4 text-center animated fadeInDown text-primary">
+            About Us
+          </h1>
+          <p class="lead text-center x-5">
+            If you need a one-stop-shop for all your product sourcing and
+            importing requirements, we offer a complete end to end solution,
+            from sourcing the product to distribution to the end customer.
+            <br />
+            <br />
+            We offer a comprehensive range of tailor-made sourcing services
+            aimed at facilitating and streamlining your business globally.
+            <br />
+            <br />
+            We have a reliable network that reaches out to the best suppliers
+            globally, and our team uses their expertise and experience to ensure
+            that you minimize expenses, mitigate associated risks.
+          </p>
+          <div class="row">
+            <div class="col-lg-4 text-center p-4 animated fadeInLeftBig">
+              <img
+                class="rounded-circle"
+                src="images/why-1.jpg"
+                width="200"
+                alt="Image"
+              />
+              <h2 class="mt-2 text-primary">Fast</h2>
+              <!-- <p class="text-secondary">
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis
+                euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              </p> -->
+            </div>
+            <div class="col-lg-4 text-center p-4 animated fadeInUpBig">
+              <img
+                class="rounded-circle"
+                src="images/why-2.jpg"
+                width="200"
+                alt="Image"
+              />
+              <h2 class="mt-2 text-primary">Reliable</h2>
+              <!-- <p class="text-secondary">
+                Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
+                amet fermentum.
+              </p> -->
+            </div>
+            <div class="col-lg-4 text-center p-4 animated fadeInRightBig">
+              <img
+                class="rounded-circle"
+                src="images/why-3.jpg"
+                width="200"
+                alt="Image"
+              />
+              <h2 class="mt-2 text-primary">Secure</h2>
+              <!-- <p class="text-secondary">
+                Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Vestibulum id ligula porta felis euismod
+                semper.
+              </p> -->
+            </div>
+          </div>
+        </div>
+
         <div class="container mt-5" id="services">
           <h1 class="display-4 text-center animated fadeInDown text-primary">
             Our Services
@@ -131,30 +211,32 @@
             business.
           </p>
 
-          <div class="row featurette my-5 container animated fadeInUp">
-            <div class="col-md-7 p-5">
+          <div
+            class="row featurette my-5 container animated fadeInUp text-center"
+          >
+            <div class="col-md-12 p-5">
               <h2 class="featurette-heading text-primary">
                 Our proven
                 <br />
                 <span class="text-muted">sourcing process.</span>
               </h2>
-              <ol class="lead pl-3">
+              <ul class="lead pl-3" style="list-style: none;">
                 <li>Understanding your requirements</li>
                 <li>Collect bids from suppliers</li>
                 <li>Provide Samples</li>
                 <li>Production</li>
                 <li>Shipping</li>
                 <li>Goods delivered to your location</li>
-              </ol>
+              </ul>
             </div>
-            <div class="col-md-5">
+            <!-- <div class="col-md-12">
               <img
                 src="images/services/service-2.png"
                 alt="Image"
                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded w-100"
                 width="300"
               />
-            </div>
+            </div> -->
           </div>
 
           <hr />
@@ -199,7 +281,7 @@
           <ul class="nav nav-tabs nav-fill mt-5" id="myTab" role="tablist">
             <li class="nav-item">
               <a
-                class="nav-link text-primary-green font-weight-bold active"
+                class="nav-link font-weight-bold active"
                 id="health-tab"
                 data-toggle="tab"
                 href="#health"
@@ -273,15 +355,15 @@
             >
               <!-- Sanitisers Section -->
               <div class="bg-sanitisers" id="sanitisers">
-                <div class="container pb-5">
+                <div class="container py-5">
                   <div class="row">
-                    <div
+                    <!-- <div
                       class="pricing-header container p-5 mx-auto text-center animated zoomIn"
                     >
                       <h1 class="display-4 text-primary-green">
-                        Imperial Plus
+                        Imperial Plus Product
                       </h1>
-                    </div>
+                    </div> -->
                     <div
                       class="col-md-4"
                       v-for="(item, index) in products"
@@ -293,7 +375,8 @@
                       >
                         <img
                           v-bind:src="'images/products/product-' + index + '.png'"
-                          class="bd-placeholder-img card-img-top"
+                          class="bd-placeholder-img card-img-top p-3"
+                          style="max-height: 300px;"
                           alt="Card Product Image"
                         />
                         <div
@@ -318,9 +401,9 @@
                                 </a>
                               </button>
                             </div>
-                            <small class="text-muted text-right">
+                            <!-- <small class="text-muted text-right">
                               {{ item.country }}
-                            </small>
+                            </small> -->
                           </div>
                         </div>
                       </div>
@@ -463,84 +546,6 @@
         </div>
       </div>
 
-      <div class="banner py-5" id="about">
-        <div class="container text-center banner__content animated slideInLeft">
-          <h1 class="display-4 mt-3">
-            Import better products
-            <br />
-            faster and easier!
-          </h1>
-          <button type="button" class="btn btn-lg btn-outline-primary">
-            <a href="#contact">
-              Enquire Now
-            </a>
-          </button>
-        </div>
-      </div>
-
-      <div class="container my-5">
-        <h1 class="display-4 text-center animated fadeInDown text-primary">
-          About Us
-        </h1>
-        <p class="lead text-center x-5">
-          If you need a one-stop-shop for all your product sourcing and
-          importing requirements, we offer a complete end to end solution, from
-          sourcing the product to distribution to the end customer.
-          <br />
-          <br />
-          We offer a comprehensive range of tailor-made sourcing services aimed
-          at facilitating and streamlining your business in China.
-          <br />
-          <br />
-          We have a reliable network that reaches out to the best suppliers in
-          China, and our team uses their expertise and experience to ensure that
-          you minimize expenses, mitigate associated risks.
-        </p>
-        <div class="row">
-          <div class="col-lg-4 text-center p-4 animated fadeInLeftBig">
-            <img
-              class="rounded-circle"
-              src="images/why-1.jpg"
-              width="200"
-              alt="Image"
-            />
-            <h2 class="mt-2 text-primary">Fast</h2>
-            <p class="text-secondary">
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            </p>
-          </div>
-          <div class="col-lg-4 text-center p-4 animated fadeInUpBig">
-            <img
-              class="rounded-circle"
-              src="images/why-2.jpg"
-              width="200"
-              alt="Image"
-            />
-            <h2 class="mt-2 text-primary">Reliable</h2>
-            <p class="text-secondary">
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum.
-            </p>
-          </div>
-          <div class="col-lg-4 text-center p-4 animated fadeInRightBig">
-            <img
-              class="rounded-circle"
-              src="images/why-3.jpg"
-              width="200"
-              alt="Image"
-            />
-            <h2 class="mt-2 text-primary">Secure</h2>
-            <p class="text-secondary">
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <!-- Contact Us -->
       <div class="bg-light text-center py-5" id="contact">
         <div id="form">
@@ -548,8 +553,7 @@
             <h1 class="display-4 text-primary">Contact Us</h1>
             <hr />
             <p class="text-secondary">
-              Get free quotes for product manufacturing from China, India &
-              Eastern Europe
+              Get free quotes for product procurement
             </p>
           </div>
 
@@ -593,7 +597,9 @@
                   ></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+                <button type="submit" class="btn btn-primary" id="btn-submit">
+                  Submit
+                </button>
               </form>
             </div>
           </div>

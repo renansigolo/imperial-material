@@ -50,6 +50,60 @@ var app = new Vue({
     products: [
       {
         thumbnail: '',
+        title: 'KN95 Face Mask',
+        description:
+          'Face mask filtering 95% of particulates with a mass mean diameter of 0.3 micrometres or more. Certified to EN149:2001+A1:2009 (Equivalent to NIOSH N95)',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'General Face Mask',
+        description: '3 Ply face mask FFP2',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'Face Mask',
+        description: '3 Ply Face Mask Certified to EN14683:2005',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'Hand Sanitiser Gel 60ml',
+        description:
+          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'Hand Sanitiser Gel 125ml',
+        description:
+          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'Hand Sanitiser Gel 250ml',
+        description:
+          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'Hand Sanitiser Gel 500ml',
+        description:
+          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
         title: 'Real Wear HMT-1 EBT',
         description:
           'Head Mounted Android Table with FLIR Thermal Imaging Camera for the early detection of Elevated Body Temperature caused by the onset of Covid-19. Used for quickly accessing large crowds.',
@@ -88,31 +142,9 @@ var app = new Vue({
       },
       {
         thumbnail: '',
-        title: 'KN95 Face Mask',
-        description:
-          'Face mask filtering 95% of particulates with a mass mean diameter of 0.3 micrometres or more. Certified to EN149:2001+A1:2009 (Equivalent to NIOSH N95)',
-        country: 'China',
-        category: 'sanitisers'
-      },
-      {
-        thumbnail: '',
-        title: 'General Face Mask',
-        description: '3 Ply face mask FFP2',
-        country: 'China',
-        category: 'sanitisers'
-      },
-      {
-        thumbnail: '',
-        title: 'Surgical Face Mask',
-        description: '3 Ply Surgical Face Mask Certified to EN14683:2005',
-        country: 'China',
-        category: 'sanitisers'
-      },
-      {
-        thumbnail: '',
         title: 'Full Body Protective Suit',
         description:
-          'Single - use full body protective PPE including Safety Glasses (Bio Surgical)',
+          'Single - use full body protective PPE including Safety Glasses',
         country: 'China',
         category: 'sanitisers'
       },
@@ -153,33 +185,36 @@ var app = new Vue({
       },
       {
         thumbnail: '',
-        title: 'Hand Sanitiser Gel 60ml',
-        description:
-          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        title: 'Lincon Gloves',
+        description: 'Lincon Gloves Medium',
         country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
-        title: 'Hand Sanitiser Gel 125ml',
-        description:
-          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        title: 'Lincon Gloves',
+        description: 'Lincon Gloves Large',
         country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
-        title: 'Hand Sanitiser Gel 250ml',
-        description:
-          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        title: 'Alcohol Wipes',
+        description: 'Alcohol Wipes',
         country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
-        title: 'Hand Sanitiser Gel 500ml',
-        description:
-          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        title: 'Simply Active',
+        description: 'Simply Active Wipes',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'Infrared Thermometer',
+        description: 'Infrared Thermometer',
         country: 'China',
         category: 'sanitisers'
       }
