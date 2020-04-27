@@ -37,148 +37,125 @@ var app = new Vue({
     ],
     products: [
       {
-        thumbnail: '',
         title: 'KN95 Face Mask',
         description:
           'Face mask filtering 95% of particulates with a mass mean diameter of 0.3 micrometres or more. Certified to EN149:2001+A1:2009 (Equivalent to NIOSH N95)',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'General Face Mask',
         description: '3 Ply face mask FFP2',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Face Mask',
         description: '3 Ply Face Mask Certified to EN14683:2005',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Hand Sanitiser Gel 60ml',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Hand Sanitiser Gel 250ml',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Hand Sanitiser Gel 500ml',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Hand Sanitiser Gel 1\L',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Real Wear HMT-1 EBT',
         description:
           'Head Mounted Android Table with FLIR Thermal Imaging Camera for the early detection of Elevated Body Temperature caused by the onset of Covid-19. Used for quickly accessing large crowds.',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Non - Contact Thermometer',
         description:
           'Infra-red Thermometer used to verify the body temperature of a person.',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Covid - 19 Anti- Body test kit',
         description:
           'Medical Grade Detection Kit Test blood of serum for the presence of CoVid-19 anti-bodies',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Sepray Non - Invasive Ventilator',
         description: 'Sepray Non - Invasive Ventilator',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Humidified High Flow Nasal Cannula Oxygen Ventilator',
         description: 'Humidified High Flow Nasal Cannula Oxygen Ventilator',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Full Body Protective Suit',
         description:
           'Single - use full body protective PPE including Safety Glasses',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Boot Covers',
         description: 'Disposable Boot / Shoe covers',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Safety Glasses',
         description: 'Clear Safety Glasses',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Face Shield',
         description: 'Clear Full Face Shield',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Face Shield',
         description: 'Clear Full Face Shield option 2',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Nitrile Gloves',
         description: 'Nitrile Gloves (Box of 100)',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Lincon Gloves',
         description: 'Lincon Gloves Medium',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Lincon Gloves',
         description: 'Lincon Gloves Large',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Alcohol Wipes',
         description: 'Alcohol Wipes',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Simply Active',
         description: 'Simply Active Wipes',
         category: 'sanitisers'
       },
       {
-        thumbnail: '',
         title: 'Infrared Thermometer',
         description: 'Infrared Thermometer',
         category: 'sanitisers'
@@ -201,14 +178,12 @@ var app = new Vue({
           'Other Doors &amp; Windows',
           'Shutter Doors'
         ],
-        country: '',
         category: 'construction'
       },
       {
         thumbnail: 'images/products/product-0.png',
         title: 'Tiles and Accessories',
         list: ['Tile Accessories', 'Floor Tiles', 'Roof Tile', 'Wall Tiles'],
-        country: '',
         category: 'construction'
       },
       {
@@ -224,7 +199,6 @@ var app = new Vue({
           'Bidets',
           'Squat Pans'
         ],
-        country: '',
         category: 'construction'
       }
     ],
@@ -244,7 +218,6 @@ var app = new Vue({
           'Stool & Ottomans',
           'Bookcases'
         ],
-        country: '',
         category: 'furniture'
       },
       {
@@ -258,7 +231,6 @@ var app = new Vue({
           'Nightstands',
           ' Dressers'
         ],
-        country: '',
         category: 'furniture'
       },
       {
@@ -272,7 +244,6 @@ var app = new Vue({
           'Nightstands',
           ' Dressers'
         ],
-        country: '',
         category: 'furniture'
       }
     ],
@@ -293,7 +264,6 @@ var app = new Vue({
           'Packaging Trays',
           'Other Packaging Products'
         ],
-        country: '',
         category: 'packaging'
       },
       {
@@ -312,7 +282,6 @@ var app = new Vue({
           'Packaging Trays',
           'Other Packaging Products'
         ],
-        country: '',
         category: 'packaging'
       },
       {
@@ -330,7 +299,6 @@ var app = new Vue({
           'Tinplate',
           'Other Packaging Materials'
         ],
-        country: '',
         category: 'packaging'
       }
     ],
@@ -344,7 +312,6 @@ var app = new Vue({
           'Motor Vehicle Spare parts',
           'Fashion'
         ],
-        country: '',
         category: 'packaging'
       }
     ]
@@ -383,7 +350,6 @@ $('#contact-form').submit(function(event) {
       message: message
     }
   }).then(function(response) {
-    console.log('sendForm -> response', response)
     $('#form').toggle('fast')
     $('#form-response').toggle('fast')
   })
