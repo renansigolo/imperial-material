@@ -61,30 +61,35 @@
       <!-- Navigation -->
       <div
         class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 bg-white border-bottom shadow-sm sticky-top"
+        style="font-size: 16px;"
       >
         <a
-          class="navbar-brand my-0 mr-md-auto font-weight-normal animated fadeInLeft font-weight-bold"
+          class="navbar-brand my-0 font-weight-normal animated fadeInLeft font-weight-bold"
+          style="margin-right: 5%;"
           href="#"
         >
           <img
             src="images/logo-imperial-material.svg"
             width="80"
             height="60"
-            class="d-inline-block align-center"
+            class="d-inline-block align-center" 
             alt="Image"
           />
           {{ imperialMaterial }}
         </a>
+
+        <p class="text-center" style="margin: 0 auto;">Procurement | Innovation | Consultancy</p>
+
         <nav class="my-2 my-md-0 mr-md-3 animated fadeInRight" id="navbar">
           <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link p-2 aimated" href="#about">About</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link p-2 aimated" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link p-2 aimated" href="#products">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 aimated" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link p-2 aimated" href="#contact">Contact</a>
@@ -102,13 +107,13 @@
             width="600"
             alt="Image"
           />
-          <h1 class="text-primary">
+          <h1 class="text-dark-grey">
             Imperial Material
           </h1>
-          <h2 class="text-primary mb-5 d-none d-md-block">
+          <h2 class="text-dark-grey mb-5 d-none d-md-block">
             Procurement | Innovation | Consultancy
           </h2>
-          <h2 class="text-primary mb-5 d-md-none">
+          <h2 class="text-dark-grey mb-5 d-md-none">
             Procurement
             <br />
             Innovation
@@ -134,23 +139,19 @@
           </div>
         </div>
 
-        <div class="container my-5">
+        <div class="container my-5 pb-5">
           <h1 class="display-4 text-center animated fadeInDown text-primary">
             About Us
           </h1>
-          <p class="lead text-center x-5">
+          <p class="lead text-justify x-5">
             If you need a one-stop-shop for all your product sourcing and
             importing requirements, we offer a complete end to end solution,
-            from sourcing the product to distribution to the end customer.
-            <br />
-            <br />
-            We offer a comprehensive range of tailor-made sourcing services
-            aimed at facilitating and streamlining your business globally.
-            <br />
-            <br />
-            We have a reliable network that reaches out to the best suppliers
-            globally, and our team uses their expertise and experience to ensure
-            that you minimize expenses, mitigate associated risks.
+            from sourcing the product to distribution to the end customer. We
+            offer a comprehensive range of tailor-made sourcing services aimed
+            at facilitating and streamlining your business globally. We have a
+            reliable network that reaches out to the best suppliers globally,
+            and our team uses their expertise and experience to ensure that you
+            minimize expenses, mitigate associated risks.
           </p>
           <div class="row">
             <div class="col-lg-4 text-center p-4 animated fadeInLeftBig">
@@ -201,12 +202,12 @@
           <h1 class="display-4 text-center animated fadeInDown text-primary">
             Our Services
           </h1>
-          <p class="lead text-center">
+          <p class="lead text-justify">
             Global Sourcing and Procurement are real opportunities for cost
             reduction and competitive advantage. These cost reductions have as
             objective to create a direct channel between the importer and
             exporter, reducing the number of intermediates in the Supply Chain.
-            Imperial material Sourcing’s end-to-end Sourcing Intelligence can
+            Imperial Material Sourcing’s end-to-end Sourcing Intelligence can
             assure the best suppliers, capable and competitive for your
             business.
           </p>
@@ -214,13 +215,12 @@
           <div
             class="row featurette my-5 container animated fadeInUp text-center"
           >
-            <div class="col-md-12 p-5">
+          <div class="col-md-3"></div>
+            <div class="col-md-6 px-5">
               <h2 class="featurette-heading text-primary">
-                Our proven
-                <br />
-                <span class="text-muted">sourcing process.</span>
+                Our Proven Sourcing Process
               </h2>
-              <ul class="lead pl-3" style="list-style: none;">
+              <ul class="lead pl-3 text-justify" style="margin-left: 15%;">
                 <li>Understanding your requirements</li>
                 <li>Collect bids from suppliers</li>
                 <li>Provide Samples</li>
@@ -229,6 +229,7 @@
                 <li>Goods delivered to your location</li>
               </ul>
             </div>
+            <div class="col-md-3"></div>
             <!-- <div class="col-md-12">
               <img
                 src="images/services/service-2.png"
@@ -249,7 +250,7 @@
             >
               <img
                 v-bind:src="'images/services/service-' + index + '.png'"
-                class="card-img-top"
+                class="card-img-top card-img-xs"
                 alt="Product Image"
               />
               <div class="card-body card-flex">
@@ -375,7 +376,7 @@
                       >
                         <img
                           v-bind:src="'images/products/product-' + index + '.png'"
-                          class="bd-placeholder-img card-img-top p-3"
+                          class="bd-placeholder-img card-img-top card-img-lg p-3"
                           style="max-height: 300px;"
                           alt="Card Product Image"
                         />
@@ -429,7 +430,7 @@
                   >
                     <img
                       v-bind:src="'images/products/construction-' + index + '.png'"
-                      class="card-img-top"
+                      class="card-img-top card-img-xs"
                       alt="Product Image"
                     />
                     <div class="card-body">
@@ -462,7 +463,7 @@
                   >
                     <img
                       v-bind:src="'images/products/furniture-' + index + '.png'"
-                      class="card-img-top"
+                      class="card-img-top card-img-xs"
                       alt="Product Image"
                     />
                     <div class="card-body">
@@ -494,7 +495,7 @@
                   >
                     <img
                       v-bind:src="'images/products/packaging-' + index + '.png'"
-                      class="card-img-top"
+                      class="card-img-top card-img-xs"
                       alt="Product Image"
                     />
                     <div class="card-body">
@@ -519,6 +520,7 @@
             >
               <div class="coming-soon text-muted animated zoomIn">
                 <div class="grid">
+                  <div></div>
                   <div
                     class="card"
                     style="width: 20rem;"
@@ -526,7 +528,7 @@
                   >
                     <img
                       v-bind:src="'images/products/other-' + index + '.png'"
-                      class="card-img-top"
+                      class="card-img-top card-img-xs"
                       alt="Product Image"
                     />
                     <div class="card-body">

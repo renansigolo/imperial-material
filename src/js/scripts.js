@@ -29,7 +29,7 @@ var app = new Vue({
         imageUrl: '',
         title: 'Production',
         subtitle: 'Inspection & delivery',
-        description: 'Your products are delivered after quality inspections.',
+        description: 'Products delivered after quality inspections.',
         direction: ''
       },
       {
@@ -80,14 +80,6 @@ var app = new Vue({
       },
       {
         thumbnail: '',
-        title: 'Hand Sanitiser Gel 125ml',
-        description:
-          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
-        country: 'China',
-        category: 'sanitisers'
-      },
-      {
-        thumbnail: '',
         title: 'Hand Sanitiser Gel 250ml',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
@@ -97,6 +89,14 @@ var app = new Vue({
       {
         thumbnail: '',
         title: 'Hand Sanitiser Gel 500ml',
+        description:
+          'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
+        country: 'China',
+        category: 'sanitisers'
+      },
+      {
+        thumbnail: '',
+        title: 'Hand Sanitiser Gel 1\L',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
         country: 'China',

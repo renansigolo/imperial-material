@@ -1,5 +1,11 @@
+/* style.css */
+// * {
+//   font-size: 15px;
+// }
+
 html {
   scroll-behavior: smooth;
+  font-size: 14.5px;
 }
 
 body {
@@ -102,6 +108,18 @@ a {
     box-shadow: 0 0.5rem 1rem #8bc14425 !important;
     transform: scale(1.01);
   }
+}
+
+.card-img-xs {
+  height: 200px;
+  object-fit: cover;
+}
+.card-img-lg {
+  height: 300px;
+}
+
+.card-text {
+  text-align: justify;
 }
 
 .banner {
