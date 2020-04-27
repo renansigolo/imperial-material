@@ -5,46 +5,34 @@ var app = new Vue({
     imperialPlus: 'Imperial Plus',
     services: [
       {
-        imageUrl: '',
         title: 'Understanding your requirements',
         subtitle: 'Brainstorm & sourcing',
         description: 'Discuss your project and exchange ideas.',
-        direction: 'order-md-2'
       },
       {
-        imageUrl: '',
         title: 'Collect bids from suppliers',
         subtitle: 'Evaluation & quotation',
         description: 'Targeted manufacturers are evaluated.',
-        direction: ''
       },
       {
-        imageUrl: '',
         title: 'Provide Samples',
         subtitle: 'Sample & production',
         description: 'Pre-production sample will be delivered.',
-        direction: 'order-md-2'
       },
       {
-        imageUrl: '',
         title: 'Production',
         subtitle: 'Inspection & delivery',
         description: 'Products delivered after quality inspections.',
-        direction: ''
       },
       {
-        imageUrl: '',
         title: 'Shipping',
         subtitle: 'Brainstorm & sourcing',
         description: 'Discuss your project and exchange ideas.',
-        direction: 'order-md-2'
       },
       {
-        imageUrl: '',
         title: 'Goods delivered to your location',
         subtitle: 'Brainstorm & sourcing',
         description: 'Discuss your project and exchange ideas.',
-        direction: ''
       }
     ],
     products: [
@@ -53,21 +41,18 @@ var app = new Vue({
         title: 'KN95 Face Mask',
         description:
           'Face mask filtering 95% of particulates with a mass mean diameter of 0.3 micrometres or more. Certified to EN149:2001+A1:2009 (Equivalent to NIOSH N95)',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'General Face Mask',
         description: '3 Ply face mask FFP2',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Face Mask',
         description: '3 Ply Face Mask Certified to EN14683:2005',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -75,7 +60,6 @@ var app = new Vue({
         title: 'Hand Sanitiser Gel 60ml',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -83,7 +67,6 @@ var app = new Vue({
         title: 'Hand Sanitiser Gel 250ml',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -91,7 +74,6 @@ var app = new Vue({
         title: 'Hand Sanitiser Gel 500ml',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -99,7 +81,6 @@ var app = new Vue({
         title: 'Hand Sanitiser Gel 1\L',
         description:
           'Medical Grade Hand Sanitizer containing no less than 70% Alcohol. For quick disinfection of hands and skin',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -107,7 +88,6 @@ var app = new Vue({
         title: 'Real Wear HMT-1 EBT',
         description:
           'Head Mounted Android Table with FLIR Thermal Imaging Camera for the early detection of Elevated Body Temperature caused by the onset of Covid-19. Used for quickly accessing large crowds.',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -115,7 +95,6 @@ var app = new Vue({
         title: 'Non - Contact Thermometer',
         description:
           'Infra-red Thermometer used to verify the body temperature of a person.',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -123,21 +102,18 @@ var app = new Vue({
         title: 'Covid - 19 Anti- Body test kit',
         description:
           'Medical Grade Detection Kit Test blood of serum for the presence of CoVid-19 anti-bodies',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Sepray Non - Invasive Ventilator',
         description: 'Sepray Non - Invasive Ventilator',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Humidified High Flow Nasal Cannula Oxygen Ventilator',
         description: 'Humidified High Flow Nasal Cannula Oxygen Ventilator',
-        country: 'China',
         category: 'sanitisers'
       },
       {
@@ -145,77 +121,66 @@ var app = new Vue({
         title: 'Full Body Protective Suit',
         description:
           'Single - use full body protective PPE including Safety Glasses',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Boot Covers',
         description: 'Disposable Boot / Shoe covers',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Safety Glasses',
         description: 'Clear Safety Glasses',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Face Shield',
         description: 'Clear Full Face Shield',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Face Shield',
         description: 'Clear Full Face Shield option 2',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Nitrile Gloves',
         description: 'Nitrile Gloves (Box of 100)',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Lincon Gloves',
         description: 'Lincon Gloves Medium',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Lincon Gloves',
         description: 'Lincon Gloves Large',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Alcohol Wipes',
         description: 'Alcohol Wipes',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Simply Active',
         description: 'Simply Active Wipes',
-        country: 'China',
         category: 'sanitisers'
       },
       {
         thumbnail: '',
         title: 'Infrared Thermometer',
         description: 'Infrared Thermometer',
-        country: 'China',
         category: 'sanitisers'
       }
     ],
