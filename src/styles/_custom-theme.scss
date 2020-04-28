@@ -81,17 +81,6 @@ a {
   }
 }
 
-#medical-equipments {
-  .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem #3858a725 !important;
-  }
-  .card:hover {
-    cursor: pointer;
-    box-shadow: 0 0.5rem 1rem #3858a725 !important;
-    transform: scale(1.01);
-  }
-}
-
 #sanitisers {
   .shadow-sm {
     box-shadow: 0 0.125rem 0.25rem #8bc14425 !important;
@@ -113,6 +102,14 @@ a {
 
 .card-text {
   text-align: justify;
+}
+
+.card {
+  button:hover {
+    a {
+      color: #fff !important;
+    }
+  }
 }
 
 .banner {

@@ -31,7 +31,7 @@ const paths = {
   input: 'src/',
   output: 'dist/',
   assets: 'src/assets',
-  website: 'https://www.i-material.com.au',
+  website: 'https://i-material.com.au',
   styles: {
     input: 'src/styles',
     output: 'dist/css/'
