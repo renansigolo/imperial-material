@@ -204,6 +204,34 @@ var app = new Vue({
         category: 'construction',
       },
     ],
+    food: [
+      {
+        thumbnail: 'images/products/product-0.png',
+        title: 'Meat',
+        list: [
+          'Grass Feed Meat',
+          'Lamb',
+          'Chicken',
+        ],
+        category: 'food',
+      },
+      {
+        thumbnail: 'images/products/product-0.png',
+        title: 'Drinks',
+        list: ['Soft Drinks', 'Dr. Peppers'],
+        category: 'food',
+      },
+      {
+        thumbnail: 'images/products/product-0.png',
+        title: 'Nuts',
+        list: [
+          'Nuts',
+          'Almonds',
+          'Macadamia',
+        ],
+        category: 'food',
+      },
+    ],
     furniture: [
       {
         thumbnail: 'images/products/product-0.png',

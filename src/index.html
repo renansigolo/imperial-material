@@ -310,6 +310,19 @@
             <li class="nav-item">
               <a
                 class="nav-link text-muted font-weight-bold"
+                id="food-tab"
+                data-toggle="tab"
+                href="#food"
+                role="tab"
+                aria-controls="food"
+                aria-selected="falnose"
+              >
+                Food and Drinks
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-muted font-weight-bold"
                 id="furniture-tab"
                 data-toggle="tab"
                 href="#furniture"
@@ -428,6 +441,39 @@
                   >
                     <img
                       v-bind:src="'images/products/construction-' + index + '.png'"
+                      class="card-img-top card-img-xs"
+                      alt="Product Image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-center">{{ item.title }}</h5>
+                      <ul>
+                        <li v-for="listItem in item.list">{{listItem}}</li>
+                      </ul>
+                      <p class="card-text">
+                        {{ item.description }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="food"
+              role="tabpanel"
+              aria-labelledby="food-tab"
+            >
+              <div class="coming-soon text-muted animated zoomIn">
+                <div class="grid">
+                  <div
+                    class="card"
+                    style="width: 20rem;"
+                    v-for="(item, index) in food"
+                    v-if="item.category === 'food'"
+                  >
+                    <img
+                      v-bind:src="'images/products/food-' + index + '.png'"
                       class="card-img-top card-img-xs"
                       alt="Product Image"
                     />
