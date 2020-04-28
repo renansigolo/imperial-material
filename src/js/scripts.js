@@ -91,22 +91,6 @@ var app = new Vue({
         category: 'sanitisers',
       },
       {
-        title: 'Covid - 19 Anti- Body test kit',
-        description:
-          'Medical Grade Detection Kit Test blood of serum for the presence of CoVid-19 anti-bodies',
-        category: 'sanitisers',
-      },
-      {
-        title: 'Sepray Non - Invasive Ventilator',
-        description: 'Sepray Non - Invasive Ventilator',
-        category: 'sanitisers',
-      },
-      {
-        title: 'Humidified High Flow Nasal Cannula Oxygen Ventilator',
-        description: 'Humidified High Flow Nasal Cannula Oxygen Ventilator',
-        category: 'sanitisers',
-      },
-      {
         title: 'Full Body Protective Suit',
         description:
           'Single - use full body protective PPE including Safety Glasses',
@@ -208,27 +192,21 @@ var app = new Vue({
       {
         thumbnail: 'images/products/product-0.png',
         title: 'Meat',
-        list: [
-          'Grass Feed Meat',
-          'Lamb',
-          'Chicken',
-        ],
         category: 'food',
       },
       {
         thumbnail: 'images/products/product-0.png',
-        title: 'Drinks',
-        list: ['Soft Drinks', 'Dr. Peppers'],
+        title: 'Non-Alcoholic Beverages',
         category: 'food',
       },
       {
         thumbnail: 'images/products/product-0.png',
-        title: 'Nuts',
-        list: [
-          'Nuts',
-          'Almonds',
-          'Macadamia',
-        ],
+        title: 'Dry Fruit and Nuts',
+        category: 'food',
+      },
+      {
+        thumbnail: 'images/products/product-0.png',
+        title: 'Confectionery',
         category: 'food',
       },
     ],
