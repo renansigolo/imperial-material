@@ -25,8 +25,8 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
 
     const mailOptions = {
       subject: 'New contact from website',
-      from: '"Imperial Mateiral" <no-reply@imperialmaterial.com>',
-      to: 'tariq@i-material.com.au',
+      from: '"Imperial Mateiral" <no-reply@i-material.com.au>',
+      to: ['tariq@i-material.com.au', 'sal@i-material.com.au'],
       html: `
   <h1>You have a new message!</h1>
   <p><b>Name: </b>${form.name}</p>
