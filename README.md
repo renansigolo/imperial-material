@@ -1,15 +1,6 @@
-# 📦 Gulp Boilerplate
+# Imperial Material Website
 
-Minimal Gulp 4 boilerplate with Babel, Sass, ESLint, Live Reload, and development/production optimization.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
-## Installation
-
-```
-git clone git@github.com:renansigolo/gulp-boilerplate.git
-npm i
-```
+Landing page for the app **Imperial Material**
 
 ## Usage
 
@@ -22,20 +13,8 @@ npm start
 ### Production build
 
 ```bash
-npm run build
+npm run build:prod
 ```
-
-## Features
-
-- [Gulp](https://gulpjs.com/)
-- [Babel](https://babeljs.io/)
-- [Prettier](https://prettier.io/)
-- [Sass](https://sass-lang.com/)
-- [PostCSS](https://postcss.org/)
-- [ESLint](https://eslint.org/)
-- [Normalize.css](https://necolas.github.io/normalize.css/)
-- [Skeleton](http://getskeleton.com/)
-- [Standard Version](https://github.com/conventional-changelog/standard-version)
 
 ## Dependencies
 
@@ -68,19 +47,6 @@ npm run build
 - [`gulp-sourcemaps`](https://github.com/gulp-sourcemaps/gulp-sourcemaps) - Sourcemap support for gulpjs.
 - [`gulp-uglify`](https://github.com/terinjokes/gulp-uglify) - Minify files with UglifyJS
 
-## Bonus
-
-- Generate your `site.manifest` file at [Web App Manifest Generator](https://app-manifest.firebaseapp.com/)
-- Generate your `favicons` at [RealFaviconGenerator](https://realfavicongenerator.net/)
-
 ## Author
 
 - [Renan Sigolo](https://www.renansigolo.com/)
-
-## Acknowledgement
-
-- A huge thanks to [Tania Rascia](https://www.taniarascia.com) 👍🏻
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
